@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "potatosearch"
+version = "0.1.0"
+description = "Lean vector index with pluggable storage backends"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "faiss-cpu>=1.7.4",
+    "sentence-transformers>=2.2.0",
+    "fastapi>=0.104.0",
+    "libzim>=3.1.0",
+    "uvicorn[standard]>=0.24.0",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "aiofiles>=23.0",
+    "mcp>=1.0.0",
+    "pypdf>=3.0",
+    "python-docx>=1.0",
+    "python-pptx>=0.6",
+    "openpyxl>=3.0",
+    "odfpy>=1.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "httpx>=0.25",
+]
+
+[project.scripts]
+potatosearch-server = "potatosearch.api.server:main"
+potatosearch-ingest = "potatosearch.cli:ingest_main"
+
+[tool.setuptools.packages.find]
+include = ["potatosearch*"]

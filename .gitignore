@@ -1,0 +1,19 @@
+# Runtime data for testing
+data/
+
+# Python
+**/__pycache__/
+**/*.pyc
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+
+# Build artifacts
+*.tsbuildinfo
+ui/dist/
+
+# IDE / OS
+.DS_Store
+.pytest_cache/

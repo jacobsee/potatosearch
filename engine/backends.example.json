@@ -1,0 +1,28 @@
+{
+  "backends": [
+    {
+      "id": "wikipedia-en",
+      "type": "zim",
+      "paths": [
+        "/path/to/wikipedia_en_all.zim"
+      ],
+      "min_text_length": 200
+    },
+    {
+      "id": "stackexchange",
+      "type": "zim",
+      "paths": [
+        "/path/to/stackexchange.zim"
+      ],
+      "min_text_length": 200
+    },
+    {
+      "id": "notes",
+      "type": "plaintext",
+      "paths": [
+        "/path/to/my/notes",
+        "/path/to/docs"
+      ]
+    }
+  ]
+}
