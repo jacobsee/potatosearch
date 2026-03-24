@@ -48,6 +48,10 @@ Storage Backend Plugins
 
 Each configured backend gets its own **shard** — an isolated directory containing a FAISS index and SQLite reference store. This allows independent lifecycle management per source: you can ingest, drop, or rebuild any single shard without touching the others.
 
+## Security Note
+
+This is intended to be run locally or on a _highly trusted_ network, such as one namespaced/segmented for this work. No form of authentication has yet been implemented. **Do not expose this to an untrusted network**.
+
 ## Quick Start
 
 ### 1. Install the engine
