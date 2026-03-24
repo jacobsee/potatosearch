@@ -1,8 +1,10 @@
 # potatosearch
 
-Vector document search system for potato hardware and real people - just deploy and ingest.
+Vector document search system & MCP server for potato hardware and real people - just deploy, ingest, and use.
 
 Respects your system resources by only embedding vectors and lightweight locators back to the original source files, instead of duplicating all content into the vector database. Additionally supports IVF-PQ indexing for further reducing footprint and speeding up searches.
+
+Currently supports ZIM archives, PDF, Microsoft Office, and ODF formats for ingestion.
 
 ![Dashboard](./screenshots/dashboard.png)
 ![Indexing](./screenshots/indexing.png)
